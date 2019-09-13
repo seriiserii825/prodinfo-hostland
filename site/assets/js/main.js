@@ -16,7 +16,16 @@ $(function () {
 		let slider = $('#js-main-slider');
 		slider.slick({
 			arrows: false,
-			dots: true
+			dots: true,
+			// responsive: [
+			// 	{
+			// 		breakpoint: 600,
+			// 		settings: {
+			// 			dots: false
+			// 		}
+			// 	},
+			// ]
+
 		});
 
 		$('.main-slider-arrows .slider-arrow--left').click(function () {
@@ -56,6 +65,7 @@ $(function () {
 				{
 					breakpoint: 600,
 					settings: {
+						dots: false,
 						slidesToShow: 1,
 						slidesToScroll: 1
 					}

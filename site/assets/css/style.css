@@ -6518,12 +6518,6 @@ p {
 	color: #13d68f;
 }
 
-@media screen and (max-width: 420px) {
-	.section__subtitle {
-		display: none;
-	}
-}
-
 .section__text {
 	display: table;
 	margin: 0 auto 30px;
@@ -6905,12 +6899,6 @@ p {
 	}
 }
 
-@media screen and (max-width: 600px) {
-	.member__content {
-		display: block;
-	}
-}
-
 .member__item {
 	width: 290px;
 	height: 294px;
@@ -6964,7 +6952,7 @@ p {
 	left: -2px;
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 5px;
 	margin-bottom: 50px;
 }
@@ -7029,7 +7017,7 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	hieght: 100%;
+	height: 100%;
 	background-size: cover;
 	z-index: 3;
 	filter: contrast(70%) brightness(60%);
@@ -7233,12 +7221,6 @@ p {
 @media screen and (max-width: 1100px) {
 	.partners-slider-wrap .slider-arrow--right {
 		right: 10px;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.partners-slider-wrap .slider-arrow {
-		display: none;
 	}
 }
 
@@ -8310,5 +8292,231 @@ p {
 body.category-news .benefice {
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+	.directions__content {
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 730px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.direction__img img {
+		width: auto;
+		height: 100%;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.wpglobus-lang {
+		position: absolute;
+		top: 120px;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0;
+		padding: 0;
+	}
+	.sandwitch {
+		top: 20px;
+	}
+	.main-slider .slick-dots {
+		display: none !important;
+	}
+	.offers__item img {
+		margin-bottom: 0;
+	}
+	.member .section__title {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.member .section__subtitle {
+		margin: 0 auto 10px;
+		max-width: 200px;
+		font-size: 13px;
+	}
+	.member__content {
+		margin-bottom: 30px;
+	}
+	.member__item {
+		margin: 0;
+		width: 100%;
+		height: auto;
+		background-size: cover;
+	}
+	.member__text {
+		width: auto;
+		font-size: 11px;
+		line-height: 1.8;
+	}
+	.member__item img {
+		width: 60px;
+	}
+	.btn {
+		font-size: 17px;
+	}
+	.directions.section {
+		padding-top: 20px;
+		padding-bottom: 16px;
+	}
+	.directions .section__title {
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 230px;
+		font-size: 19px;
+		line-height: 30px;
+	}
+	.directions .section__subtitle {
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 294px;
+		font-size: 14px;
+	}
+	.directions__item {
+		height: 200px;
+	}
+	.directions__center h4 {
+		font-size: 19px;
+	}
+
+	.directions__content {
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 300px;
+	}
+	.idea__content h2 {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	.idea__content {
+		width: 80%;
+	}
+	.idea__content p {
+		margin-bottom: 10px;
+	}
+	.footer-contacts {
+		padding-left: 0;
+	}
+	.footer h2 {
+		padding-bottom: 20px;
+	}
+	.advantage__description {
+		display: none;
+	}
+	.advantage-content .section__title {
+		position: relative;
+		left: 0;
+		margin-bottom: 14px;
+		padding-bottom: 14px;
+		font-size: 20px;
+	}
+	.advantage__item {
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+
+	.advantage-content .section__title span::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40px;
+		height: 3px;
+		background: #13D68F;
+	}
+	.advantage__img {
+		margin-bottom: 10px;
+	}
+	.advantage__text {
+		position: relative;
+		padding-bottom: 10px;
+	}
+
+	.advantage__text::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40px;
+		height: 3px;
+		background: #13D68F;
+	}
+
+	.page-template-page-contacts .page-intro,
+	.page-template-members .page-intro,
+	.page-template-advantages .page-intro {
+		height: 160px;
+	}
+
+	.page-template-members .page-intro::after,
+	.page-template-advantages .page-intro::after {
+		content: '';
+		position: absolute;
+		bottom: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60px;
+		height: 4px;
+		background: #fff;
+		z-index: 1000;
+	}
+
+	.page-template-members .benefice,
+	.page-template-advantages .benefice {
+		padding: 20px 0;
+	}
+
+	.page-template-members .benefice p,
+	.page-template-advantages .benefice p {
+		text-align: left;
+	}
+
+
+	.page-template-members .benefice .btn,
+	.page-template-advantages .benefice .btn {
+		left: 0;
+		font-size: 16px;
+	}
+
+	.category-news  .page-intro .section__title{
+		position: relative;
+		top: 10px;
+		margin: 0 auto;
+		max-width: 180px;
+	}
+
+	.category-news  .page-intro{
+		height: 160px;
+	}
+
+	.page-template-page-contacts .page-intro .section__title {
+		position: relative;
+		top: 10px;
+	}
+
+	.news__block {
+		border: none;
+	}
+	.news__img {
+		margin-bottom: 0;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+	.main-header .logo {
+		width: 260px;
+	}
 }
 
